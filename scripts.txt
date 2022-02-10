@@ -1,0 +1,3 @@
+use mysql
+create  database anas_hospital
+select * from ill
