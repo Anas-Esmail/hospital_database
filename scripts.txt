@@ -36,6 +36,27 @@ CONSTRAINT ADD PRIMARY KEY(ill_id)
 
 
 
+INSERT INTO TABLE ill (ill_id,ill_name,ill_sex,ill_date,ill_phone,ill_address) VALUES (1,anas,male,12-12-1998,777777,yemen),(2,ahmed,male,12-12-1998,777777,yemen),(3,salah,male,12-12-1998,777777,yemen)
+
+INSERT INTO TABLE doctor (speicail_number,doctor_number,doctor_name,doctor_speicail) VALUES (1,1,salah,heart),(2,1,ahmed,ear)
+
+INSERT INTO TABLE department (department_number,department_name) VALUES (1,salgry),(2,emergency)
+
+
+INSERT INTO TABLE detailed_bill (detailed_bill_number,service_price,services_number) VALUES (1,1000,2),(2,200,3)
+
+
+INSERT INTO TABLE doctor_speicail (speicail_number,speicail_name) VALUES (1,heart),(2,ear)
+
+INSERT INTO TABLE main_bill (main_bill_number,main_bill_date,detailed_bill_number) VALUES (1,12-12-1998,1),(2,12-12-1998,1)
+
+INSERT INTO TABLE services (services_number,service_price,services_name) VALUES (1,200,CHECKing),(2,100,blood)
+
+INSERT INTO TABLE take (ill_id,main_bill_number,department_number,take_number,take_time,take_state,take_resuilts,doctor_number) VALUES (1,1,2,1,12-11-1998,Active,high,1)
+
+
+
+
 CREATE TABLE detailed_bill  (
 detailed_bill_number INT , 
 service_price INT ,
