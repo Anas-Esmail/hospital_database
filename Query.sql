@@ -32,6 +32,14 @@ CONSTRAINT ADD PRIMARY KEY(ill_id)
 
 ) 
 
+INSERT INTO TABLE ill (ill_id,ill_name,ill_sex,ill_date,ill_phone,ill_address) VALUES (1,anas,male,12-12-1998,777777,yemen),(2,ahmed,male,12-12-1998,777777,yemen),(3,salah,male,12-12-1998,777777,yemen)
+
+INSERT INTO TABLE doctor (speicail_number,doctor_number,doctor_name,doctor_speicail) VALUES (1,1,salah,heart),(2,1,ahmed,ear)
+
+INSERT INTO TABLE department (department_number,department_name) VALUES (1,salgry),(2,emergency)
+
+
+INSERT INTO TABLE detailed_bill (detailed_bill_number,service_price,services_number) VALUES (1,1000,2),(2,200,3)
 
 
 
